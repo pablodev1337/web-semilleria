@@ -1,0 +1,135 @@
+.novedades-contenedor {
+    background-image: url('../media/fondo.jpg'); /* Cambiá si usás otra imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.novedades-box {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    border-left: 8px solid sienna;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo-novedades {
+    text-align: center;
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+.texto-novedades {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.subtitulo-novedades {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+.novedades-galeria {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.novedades-galeria img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.novedades-galeria img:hover {
+    transform: scale(1.03);
+}
+
+.modal-novedades {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido-novedades {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.cerrar-novedades {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-novedades {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.modal-content-novedades {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 550px;
+    text-align: center;
+    position: relative;
+    animation: aparecer 0.2s ease-out;
+}
+
+#modalTextoNovedades {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #444;
+    font-weight: 500;
+}
+
+#cerrarModalNovedades {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#modalImagenNovedades {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

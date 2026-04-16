@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades | FATY</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/novedades.css">
+    <link rel="icon" type="image/png" href="media/logo_favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="media/logo.png"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos y servicios</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="novedades-contenedor">
+        <div class="novedades-box">
+            <h1 class="titulo-novedades">Novedades</h1>
+            <p class="texto-novedades">
+                ¡En FATY estamos creciendo! Muy pronto abriremos nuevas sucursales en 
+                <strong>Buenos Aires</strong>, <strong>Córdoba</strong>, <strong>Santa Fe</strong> y más provincias.  
+                Seguimos trabajando para estar más cerca de vos y ofrecer la mejor calidad en nuestros productos naturales.
+            </p>
+            <h2 class="subtitulo-novedades">Próximos Productos</h2>
+            <p class="texto-novedades">
+                Estamos expandiendo nuestra variedad. Estos son algunos de los productos que llegarán muy pronto:
+            </p>
+            <div class="novedades-galeria">
+                <div class="novedad-item">
+                    <img src="media/pasta_mani.avif" 
+                        class="zoom-novedades"
+                        data-descripcion="Pasta de maní 100% natural – Disponible muy pronto.">
+                </div>
+                <div class="novedad-item">
+                    <img src="media/pasta_sesamo.jpg" 
+                        class="zoom-novedades"
+                        data-descripcion="Pasta de sésamo (Tahini) artesanal – Lanzamiento próximo.">
+                </div>
+                <div class="novedad-item">
+                    <img src="media/pistachos.jpg" 
+                        class="zoom-novedades"
+                        data-descripcion="Pistachos seleccionados de alta calidad – Próximamente.">
+                </div>
+                <div class="novedad-item">
+                    <img src="media/granos_cafe.jpg" 
+                        class="zoom-novedades"
+                        data-descripcion="Granos de café premium para moler – Muy pronto.">
+                </div>
+            </div>
+        </div>
+        <div id="modalNovedades" class="modal-novedades">
+            <div class="modal-content-novedades">
+                <span id="cerrarModalNovedades">X</span>
+                <img id="modalImagenNovedades">
+                <p id="modalTextoNovedades"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="copyright">© 2025 FATY Semillería – Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/semilleriafaty" target="_blank">
+                    <img src="media/instagram.svg" alt="Instagram">
+                @semilleriafaty
+                </a>
+                <a href="https://www.fb.com/semilleriafaty" target="_blank">
+                <img src="media/facebook.svg" alt="Facebook">
+                /semilleriafaty
+                </a>
+                <a href="https://www.twitter.com/semilleriafaty" target="_blank">
+                <img src="media/twitter.svg" alt="Twitter">
+                @semilleriafaty
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/novedades.js"></script>
+</body>
+</html>

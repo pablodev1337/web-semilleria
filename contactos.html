@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | FATY</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="icon" type="image/png" href="media/logo_favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="media/logo.png"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos y servicios</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contacto-contenedor">
+        <div class="contacto-box">
+            <h1 class="titulo-contacto">Contacto</h1>
+            <p class="texto-contacto">
+                Si tenés alguna consulta, sugerencia o querés saber más sobre nosotros,
+                completá el siguiente formulario y nos pondremos en contacto.
+            </p>
+            <form id="formContacto" class="form-contacto">
+                <label>Apellido y Nombre</label>
+                <input type="text" id="nombre" required>
+                <label>Correo electrónico</label>
+                <input type="email" id="email" required>
+                <label>Localidad donde vive</label>
+                <input type="text" id="localidad" required>
+                <label>¿Quién te recomendó nuestra página?</label>
+                <textarea id="comentario" required></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+            <button id="btnVerDatos" class="btn-ver-datos">
+                Ver datos enviados
+            </button>
+            <div id="datosGuardados" class="datos-guardados"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="copyright">© 2025 FATY Semillería – Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/semilleriafaty" target="_blank">
+                    <img src="media/instagram.svg" alt="Instagram">
+                @semilleriafaty
+                </a>
+                <a href="https://www.fb.com/semilleriafaty" target="_blank">
+                <img src="media/facebook.svg" alt="Facebook">
+                /semilleriafaty
+                </a>
+                <a href="https://www.twitter.com/semilleriafaty" target="_blank">
+                <img src="media/twitter.svg" alt="Twitter">
+                @semilleriafaty
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

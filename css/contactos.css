@@ -1,0 +1,88 @@
+body {
+    background-image: url("../media/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contacto-contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contacto-box {
+    width: 85%;
+    max-width: 850px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-left: 8px solid sienna;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 40px;
+    color: goldenrod;
+    margin-bottom: 25px;
+}
+
+.texto-contacto {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contacto label {
+    font-weight: bold;
+    color: sienna;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 10px;
+    border: 2px solid sienna;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-contacto textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn-enviar,
+.btn-ver-datos {
+    background-color: goldenrod;
+    border: none;
+    padding: 12px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-enviar:hover,
+.btn-ver-datos:hover {
+    background-color: rgb(197, 148, 31);
+}
+
+.datos-guardados {
+    margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+}

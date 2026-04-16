@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Servicios | FATY</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="icon" type="image/png" href="media/logo_favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button id="btn-sidebar" class="btn-sidebar">☰</button>
+            <a href="index.html"><img src="media/logo.png"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos y servicios</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <h2>Categorías</h2>
+        <ul>
+            <li data-cat="harinas">Harinas</li>
+            <li data-cat="frutos">Frutos secos</li>
+            <li data-cat="aceites">Aceites</li>
+            <li data-cat="especias">Especias</li>
+            <li data-cat="todos" class="todos">Mostrar todos</li>
+        </ul>
+    </div>
+    <main class="productos-contenedor">
+        <div class="productos-box">
+            <h1 class="titulo-productos">Productos y Servicios</h1>
+            <div class="grid-productos">
+                <div class="producto" data-cat="frutos" data-nombre="Almendras" data-descripcion="Almendras naturales, ricas en vitamina E y grasas saludables." data-imagen="media/almendras.jpg">
+                    <img src="media/almendras.jpg" alt="Almendras">
+                    <h3>Almendras</h3>
+                    <p class="precio">$2000 x 100g</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="frutos" data-nombre="Maní" data-descripcion="Maní tostado sin sal, ideal para snacks saludables." data-imagen="media/mani.jpg">
+                    <img src="media/mani.jpg" alt="Maní">
+                    <h3>Maní</h3>
+                    <p class="precio">$1500 x 100g</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="frutos" data-nombre="Nueces" data-descripcion="Nueces seleccionadas, ricas en omega 3 y antioxidantes." data-imagen="media/nueces.jpg">
+                    <img src="media/nueces.jpg" alt="Nueces">
+                    <h3>Nueces</h3>
+                    <p class="precio">$1200 x 100g</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="frutos" data-nombre="Dátiles" data-descripcion="Dátiles naturales, fuente de energía rápida y fibra." data-imagen="media/datiles.avif">
+                    <img src="media/datiles.avif" alt="Dátiles">
+                    <h3>Dátiles</h3>
+                    <p class="precio">$1000 x 100g</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="harinas" data-nombre="Harina Integral" data-descripcion="Harina integral 100% natural, ideal para panificados." data-imagen="media/harina.jpg">
+                    <img src="media/harina.jpg" alt="Harina integral">
+                    <h3>Harina Integral</h3>
+                    <p class="precio">$1250 x kilo</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="aceites" data-nombre="Aceite de Oliva" data-descripcion="Aceite de oliva extra virgen, prensado en frío." data-imagen="media/aceite.jpg">
+                    <img src="media/aceite.jpg" alt="Aceite de oliva">
+                    <h3>Aceite de Oliva</h3>
+                    <p class="precio">$6000 x 500ml</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="especias" data-nombre="Cacao en polvo" data-descripcion="Cacao amargo puro al 100%, ideal para postres saludables." data-imagen="media/cacao.jpg">
+                    <img src="media/cacao.jpg" alt="Cacao en polvo">
+                    <h3>Cacao en polvo</h3>
+                    <p class="precio">$1000 x 100g</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+                <div class="producto" data-cat="especias" data-nombre="Canela en rama" data-descripcion="Canela en rama seleccionada, aroma intenso y natural." data-imagen="media/canela.jpg">
+                    <img src="media/canela.jpg" alt="Canela en rama">
+                    <h3>Canela en rama</h3>
+                    <p class="precio">$2000 x 100g</p>
+                    <a class="wsp" href="https://wa.me/" target="_blank">
+                        <img src="media/whatsapp.svg"> Consultar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal-producto">
+            <div class="modal-content">
+                <span id="cerrar-modal">X</span>
+                <img id="modal-imagen">
+                <h2 id="modal-nombre"></h2>
+                <p id="modal-descripcion"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="copyright">© 2025 FATY Semillería – Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/semilleriafaty" target="_blank">
+                    <img src="media/instagram.svg" alt="Instagram">
+                    @semilleriafaty
+                </a>
+                <a href="https://www.fb.com/semilleriafaty" target="_blank">
+                    <img src="media/facebook.svg" alt="Facebook">
+                    /semilleriafaty
+                </a>
+                <a href="https://www.twitter.com/semilleriafaty" target="_blank">
+                    <img src="media/twitter.svg" alt="Twitter">
+                    @semilleriafaty
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/producto.js"></script>
+</body>
+</html>
